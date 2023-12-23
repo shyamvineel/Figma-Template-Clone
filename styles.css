@@ -90,7 +90,6 @@ body{
     margin-top: 2rem;
     width: 8.625rem;
     height: 2.75rem;
-    flex-shrink: 0;
     border-radius: 0.25rem;
     background: #2F2F2F;
     color: #FFF;
@@ -193,7 +192,11 @@ body{
     margin-bottom: 8.0625rem;
     margin-top: 3rem;
 }
-.project{display: flex;}
+.project{
+    display: flex;
+    width: 100%;
+
+}
 #projectimg1 , #projectimg2 , #projectimg3{
     width: 10rem;
     height: 10rem;
@@ -254,13 +257,32 @@ body{
     margin-top:0.5rem;
 }
 @media only screen and (max-width: 600px) {
+    .section1{
+        width: fit-content;
+    }
+    .left_section1{
+        width: 50%;
+        margin-left: 2rem;
+        margin-right: 1.25rem;
+    }
+    .right_section1{
+        width: 50%;
+        object-fit: cover;
+    }
+    .heroimage{
+        width: 44.375rem;
+        height: 37.5rem;
+    }
     .sec2box1{
-        max-width: 96%;
-        margin-top: 3rem;
-        margin-bottom:  6.125rem;
+        display: block;
     }
     .box{
-        width: 100%;
+        margin: auto;
+    }
+    .sec2bigtxt{
+        width: 43.75rem;
+        margin: auto;
+        
     }
 
 }
