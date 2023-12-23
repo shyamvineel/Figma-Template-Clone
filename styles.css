@@ -278,6 +278,7 @@ footer{
         display: block;
     }
     .box{
+        width:100%;
         margin: auto;
     }
     .sec2bigtxt{
